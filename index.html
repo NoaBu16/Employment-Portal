@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal - Noah Burks</title>
+    <meta name="description" content="Noah Burks – Employment information, payroll, documents, and benefits.">
+    <!-- Set this to your live URL after deployment (e.g. https://yourusername.github.io/employment-portal/) -->
+    <link rel="canonical" href="https://noahburks.github.io/employment-portal/">
+    <meta property="og:url" content="https://noahburks.github.io/employment-portal/">
+    <meta property="og:title" content="Employee Portal - Noah Burks">
+    <meta property="og:description" content="Employment information, payroll, documents, and benefits.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#6366f1"/>
+                            <stop offset="100%" stop-color="#8b5cf6"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Employee Portal</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Dashboard</a></li>
+                <li><a href="#personal" class="nav-link">Personal Info</a></li>
+                <li><a href="#payroll" class="nav-link">Payroll</a></li>
+                <li><a href="#documents" class="nav-link">Documents</a></li>
+                <li><a href="#benefits" class="nav-link">Benefits</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome Back, Noah</h1>
+            <p class="hero-subtitle">Your employment information and resources in one place</p>
+            <div class="hero-buttons">
+                <a href="#personal" class="btn btn-primary">View Personal Info</a>
+                <a href="#documents" class="btn btn-secondary">Access Documents</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="card-icon">📄</div>
+                <p>Documents</p>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">💰</div>
+                <p>Payroll</p>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">🏥</div>
+                <p>Benefits</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Information Section -->
+    <section id="personal" class="personal-info">
+        <div class="container">
+            <h2 class="section-title">Personal Information</h2>
+            <div class="info-card">
+                <div class="info-header">
+                    <h3>Employee Details</h3>
+                    <button class="edit-btn" aria-label="Edit information">✏️ Edit</button>
+                </div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Full Name</span>
+                        <span class="info-value">Noah Burks</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Date of Birth</span>
+                        <span class="info-value">March 27th, 1995</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Address</span>
+                        <span class="info-value">8007 Leawood Blvd, Little Rock, AR 72205</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Phone Number</span>
+                        <span class="info-value">1(501)786-2618</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span class="info-value">Nburks327@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Slack Username</span>
+                        <span class="info-value">Nbcassweeps</span>
+                    </div>
+                    <div class="info-item secure">
+                        <span class="info-label">SSN / Tax ID</span>
+                        <span class="info-value">***-**-**76</span>
+                        <span class="secure-badge">🔒 Secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payroll Section -->
+    <section id="payroll" class="payroll">
+        <div class="container">
+            <h2 class="section-title">Payroll & Compensation</h2>
+            <div class="payroll-grid">
+                <a href="#" class="payroll-card">
+                    <div class="payroll-icon">💵</div>
+                    <h3>Pay Stubs</h3>
+                    <p>View and download your pay stubs</p>
+                    <span class="card-link">Access →</span>
+                </a>
+                <a href="#" class="payroll-card">
+                    <div class="payroll-icon">🏦</div>
+                    <h3>Direct Deposit</h3>
+                    <p>Manage your direct deposit information</p>
+                    <span class="card-link">View →</span>
+                </a>
+                <a href="#" class="payroll-card">
+                    <div class="payroll-icon">📊</div>
+                    <h3>Salary History</h3>
+                    <p>View your salary history and pay rate</p>
+                    <span class="card-link">View →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Benefits & Perks</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Competitive Compensation</h3>
+                    <p>Market-leading salaries and equity packages</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏥</div>
+                    <h3>Health & Wellness</h3>
+                    <p>Comprehensive medical, dental, and vision coverage</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏖️</div>
+                    <h3>Flexible Time Off</h3>
+                    <p>Take time when you need it - no strict limits</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏠</div>
+                    <h3>Remote Work</h3>
+                    <p>Work from anywhere with flexible arrangements</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <h3>Learning & Development</h3>
+                    <p>Budget for courses, conferences, and skill building</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🍕</div>
+                    <h3>Team Events</h3>
+                    <p>Regular team outings, game nights, and celebrations</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💻</div>
+                    <h3>Equipment & Setup</h3>
+                    <p>Top-of-the-line hardware and home office stipend</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Support</h3>
+                    <p>Parental leave, childcare support, and family programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="documents">
+        <div class="container">
+            <h2 class="section-title">Important Documents</h2>
+            <div class="documents-tabs">
+                <button class="doc-tab active" data-category="all">All Documents</button>
+                <button class="doc-tab" data-category="hiring">Hiring</button>
+                <button class="doc-tab" data-category="tax">Tax Forms</button>
+                <button class="doc-tab" data-category="employment">Employment</button>
+                <button class="doc-tab" data-category="certifications">Certifications</button>
+            </div>
+            <div class="documents-grid">
+                <!-- Hiring Documents -->
+                <a href="#" class="document-card" data-category="hiring">
+                    <div class="document-icon">📋</div>
+                    <h3>Employment Contract</h3>
+                    <p>Your employment contract and agreement</p>
+                    <span class="doc-badge">Hiring</span>
+                </a>
+                <a href="#" class="document-card" data-category="hiring">
+                    <div class="document-icon">📝</div>
+                    <h3>Hiring Documentation</h3>
+                    <p>All hiring-related documents and forms</p>
+                    <span class="doc-badge">Hiring</span>
+                </a>
+                <a href="#" class="document-card" data-category="hiring">
+                    <div class="document-icon">🚀</div>
+                    <h3>Onboarding Documents</h3>
+                    <p>Onboarding materials and checklists</p>
+                    <span class="doc-badge">Hiring</span>
+                </a>
+                <a href="#" class="document-card" data-category="hiring">
+                    <div class="document-icon">🔍</div>
+                    <h3>Background Check</h3>
+                    <p>Background check results and reports</p>
+                    <span class="doc-badge">Hiring</span>
+                </a>
+                
+                <!-- Tax Forms -->
+                <a href="#" class="document-card" data-category="tax">
+                    <div class="document-icon">📑</div>
+                    <h3>Tax Forms</h3>
+                    <p>W-4, W-2, and other tax documentation</p>
+                    <span class="doc-badge">Tax</span>
+                </a>
+                
+                <!-- Employment Documents -->
+                <a href="#" class="document-card" data-category="employment">
+                    <div class="document-icon">💼</div>
+                    <h3>Job Description</h3>
+                    <p>Current and previous job descriptions</p>
+                    <span class="doc-badge">Employment</span>
+                </a>
+                <a href="#" class="document-card" data-category="employment">
+                    <div class="document-icon">📊</div>
+                    <h3>Performance Reviews</h3>
+                    <p>Performance evaluations and feedback</p>
+                    <span class="doc-badge">Employment</span>
+                </a>
+                <a href="#" class="document-card" data-category="employment">
+                    <div class="document-icon">📚</div>
+                    <h3>Training Records</h3>
+                    <p>Training history and completion records</p>
+                    <span class="doc-badge">Employment</span>
+                </a>
+                <a href="#" class="document-card" data-category="employment">
+                    <div class="document-icon">✅</div>
+                    <h3>Policy Acknowledgments</h3>
+                    <p>Signed policy acknowledgments</p>
+                    <span class="doc-badge">Employment</span>
+                </a>
+                <a href="#" class="document-card" data-category="employment">
+                    <div class="document-icon">⚠️</div>
+                    <h3>Disciplinary Actions</h3>
+                    <p>Disciplinary action records (if applicable)</p>
+                    <span class="doc-badge">Employment</span>
+                </a>
+                
+                <!-- Certifications & Licenses -->
+                <a href="#" class="document-card" data-category="certifications">
+                    <div class="document-icon">🎓</div>
+                    <h3>Licenses</h3>
+                    <p>Professional licenses and certifications</p>
+                    <span class="doc-badge">Certifications</span>
+                </a>
+                <a href="#" class="document-card" data-category="certifications">
+                    <div class="document-icon">🏆</div>
+                    <h3>Certifications</h3>
+                    <p>Professional certifications and credentials</p>
+                    <span class="doc-badge">Certifications</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Dashboard</a></li>
+                        <li><a href="#personal">Personal Info</a></li>
+                        <li><a href="#payroll">Payroll</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#documents">Documents</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">HR Contact</a></li>
+                        <li><a href="#">IT Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HR Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
